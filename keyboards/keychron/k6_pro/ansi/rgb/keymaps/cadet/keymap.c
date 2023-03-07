@@ -14,6 +14,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
+/*
+
+to flash your board, run this in the terminal at the root of this code repository:
+
+$ make clean && make distclean && make keychron/k6_pro/ansi/rgb:cadet:flash
+
+*/
+
 #include QMK_KEYBOARD_H
 
 // clang-format off
