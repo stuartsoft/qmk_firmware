@@ -118,5 +118,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  X(CC_LOGICAL_AND),  X(CC_LOGICAL_OR),  X(CC_INTERSECTION),  X(CC_UNION),  X(CC_SUBSET_OF),  X(CC_SUPERSET_OF),  X(CC_FOR_ALL),  X(CC_INFINITY),  X(CC_THERE_EXISTS),  X(CC_PARTIAL_DIFFERENTIAL),  _______,  _______,  _______,
         _______,  X(CC_UP_TACK),  X(CC_DOWN_TACK),  X(CC_RIGHT_TACK),  X(CC_LEFT_TACK),  X(CC_UPWARDS_ARROW),  X(CC_DOWNWARDS_ARROW),  X(CC_LEFTWARDS_ARROW), X(CC_RIGHTWARDS_ARROW),  X(CC_LEFT_RIGHT_ARROW),  _______,  _______,            _______,
         KC_J,               X(CC_RIGHT_ANGLE),  X(CC_RIGHT_ANGLE_SUBSTITUTION_MARKER),  X(CC_NOT_EQUAL_TO),  X(CC_ASYPTOTICALLY_EQUAL_TO),  X(CC_IDENTICAL_TO),  X(CC_LESS_THAN_OR_EQUAL_TO),  X(CC_GREATER_THAN_OR_EQUAL_TO),  _______,  _______,  _______,               KC_Z,
-        _______,  _______,  _______,                                BAT_LVL,                                _______,  _______,  _______,  _______),
+        _______,  _______,  _______,                                BAT_LVL,                                UC_NEXT,  _______,  _______,  _______),
 };
