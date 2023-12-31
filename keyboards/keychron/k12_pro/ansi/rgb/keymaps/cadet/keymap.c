@@ -1,4 +1,4 @@
-/* Copyright 2023 @ Keychron (https://www.keychron.com)
+/* Copyright 2023 @ Keychron (https://www.keychron.com) (with modifications by Stu)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,6 +23,65 @@ enum layers{
   MAC_FN1,
   WIN_FN1,
   FN2,
+};
+
+
+enum custom_unicodes {
+    CC_LOGICAL_AND,
+    CC_LOGICAL_OR,
+    CC_INTERSECTION,
+    CC_UNION,
+    CC_SUBSET_OF,
+    CC_SUPERSET_OF,
+    CC_FOR_ALL,
+    CC_INFINITY,
+    CC_THERE_EXISTS,
+    CC_PARTIAL_DIFFERENTIAL,
+    CC_UP_TACK,
+    CC_DOWN_TACK,
+    CC_RIGHT_TACK,
+    CC_LEFT_TACK,
+    CC_UPWARDS_ARROW,
+    CC_DOWNWARDS_ARROW,
+    CC_LEFTWARDS_ARROW,
+    CC_RIGHTWARDS_ARROW,
+    CC_LEFT_RIGHT_ARROW,
+    CC_RIGHT_ANGLE,
+    CC_RIGHT_ANGLE_SUBSTITUTION_MARKER,
+    CC_NOT_EQUAL_TO,
+    CC_ASYPTOTICALLY_EQUAL_TO,
+    CC_IDENTICAL_TO,
+    CC_LESS_THAN_OR_EQUAL_TO,
+    CC_GREATER_THAN_OR_EQUAL_TO
+};
+
+const uint32_t unicode_map[] PROGMEM = {
+    [CC_LOGICAL_AND] = 0x2227,
+    [CC_LOGICAL_OR] = 0x2228,
+    [CC_INTERSECTION] = 0x2229,
+    [CC_UNION] = 0x222A,
+    [CC_SUBSET_OF] = 0x2282,
+    [CC_SUPERSET_OF] = 0x2283,
+    [CC_FOR_ALL] = 0x2200,
+    [CC_INFINITY] = 0x221E,
+    [CC_THERE_EXISTS] = 0x2203,
+    [CC_PARTIAL_DIFFERENTIAL] = 0x2202,
+    [CC_UP_TACK] = 0x22A5,
+    [CC_DOWN_TACK] = 0x22A4,
+    [CC_RIGHT_TACK] = 0x22A2,
+    [CC_LEFT_TACK] = 0x22A3,
+    [CC_UPWARDS_ARROW] = 0x2191,
+    [CC_DOWNWARDS_ARROW] = 0x2193,
+    [CC_LEFTWARDS_ARROW] = 0x2190,
+    [CC_RIGHTWARDS_ARROW] = 0x2192,
+    [CC_LEFT_RIGHT_ARROW] = 0x2194,
+    [CC_RIGHT_ANGLE] = 0x221F,
+    [CC_RIGHT_ANGLE_SUBSTITUTION_MARKER] = 0x2E00,
+    [CC_NOT_EQUAL_TO] = 0x2260,
+    [CC_ASYPTOTICALLY_EQUAL_TO] = 0x2243,
+    [CC_IDENTICAL_TO] = 0x2261,
+    [CC_LESS_THAN_OR_EQUAL_TO] = 0x2264,
+    [CC_GREATER_THAN_OR_EQUAL_TO] = 0x2265
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
