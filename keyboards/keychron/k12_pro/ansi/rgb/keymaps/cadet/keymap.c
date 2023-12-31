@@ -109,14 +109,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [WIN_FN1] = LAYOUT_61_ansi(
         KC_GRV,   KC_BRID,  KC_BRIU,  KC_TASK,  KC_FILE,  RGB_VAD,  RGB_VAI,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  RGB_MOD,
         _______,  BT_HST1,  BT_HST2,  BT_HST3,  _______,  _______,  _______,  _______,  KC_APP,   KC_SCRL,  KC_INS,   KC_PGUP,  KC_HOME,  _______,
-        RGB_TOG,  RGB_MOD,  RGB_VAI,  RGB_HUI,  RGB_SAI,  RGB_SPI,  _______,  _______,  KC_UP,    KC_PSCR,  KC_PGDN,  KC_END,             _______,
-        _______,            RGB_RMOD, RGB_VAD,  RGB_HUD,  RGB_SAD,  RGB_SPD,  NK_TOGG,  KC_LEFT,  KC_DOWN,  KC_RIGHT, KC_DEL,             _______,
+        RGB_TOG,  RGB_MOD,  RGB_VAI,  RGB_HUI,  RGB_SAI,  KC_UP,    KC_DOWN,  KC_LEFT,  KC_RIGHT, KC_PSCR,  KC_PGDN,  KC_END,             _______,
+        _______,            RGB_RMOD, RGB_VAD,  RGB_HUD,  RGB_SAD,  _______,  NK_TOGG,  RGB_SPI,  RGB_SPD,  _______,  KC_DEL,             _______,
         _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______),
 
     [FN2] = LAYOUT_61_ansi(
         KC_TILD,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   _______,
-        _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-        _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,
-        _______,            _______,  _______,  _______,  _______,  BAT_LVL,  _______,  _______,  _______,  _______,  _______,            _______,
-        _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______),
+        _______,  X(CC_LOGICAL_AND),  X(CC_LOGICAL_OR),  X(CC_INTERSECTION),  X(CC_UNION),  X(CC_SUBSET_OF),  X(CC_SUPERSET_OF),  X(CC_FOR_ALL),  X(CC_INFINITY),  X(CC_THERE_EXISTS),  X(CC_PARTIAL_DIFFERENTIAL),  _______,  _______,  _______,
+        _______,  X(CC_UP_TACK),  X(CC_DOWN_TACK),  X(CC_RIGHT_TACK),  X(CC_LEFT_TACK),  X(CC_UPWARDS_ARROW),  X(CC_DOWNWARDS_ARROW),  X(CC_LEFTWARDS_ARROW), X(CC_RIGHTWARDS_ARROW),  X(CC_LEFT_RIGHT_ARROW),  _______,  _______,            _______,
+        KC_J,               X(CC_RIGHT_ANGLE),  X(CC_RIGHT_ANGLE_SUBSTITUTION_MARKER),  X(CC_NOT_EQUAL_TO),  X(CC_ASYPTOTICALLY_EQUAL_TO),  X(CC_IDENTICAL_TO),  X(CC_LESS_THAN_OR_EQUAL_TO),  X(CC_GREATER_THAN_OR_EQUAL_TO),  _______,  _______,  _______,               KC_Z,
+        _______,  _______,  _______,                                BAT_LVL,                                _______,  _______,  _______,  _______),
 };
